@@ -3,7 +3,7 @@ FROM quay.io/redhattraining/httpd-parent
 EXPOSE 8080
 LABEL io.openshift.expose-services="8080:http"
 LABEL io.k8s.description="A basic Apache" \
-      io.k8s.display-name+Apache HTTP Server" \
+      io.k8s.display-name="Apache HTTP Server" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="apache, http"
 RUN chgrp -R 0 /var/log/httpd /var/run/httpd && \
